@@ -1,4 +1,4 @@
-package com.tekpyramid.chaingrid.product_inventory;
+package com.tekpyramid.chaingrid.login;
 
 import org.testng.annotations.Test;
 
@@ -6,13 +6,14 @@ import com.tekpyramid.chaingrid.generic_baseclass.AdminBaseClass;
 import com.tekpyramid.chaingrid.object_repository.AdminHomePage;
 import com.tekpyramid.chaingrid.object_repository.AdminOrdersPage;
 
-public class SearchOrdersTest extends AdminBaseClass {
+public class SearchByStatusTest extends AdminBaseClass {
 
 	@Test
-	public void searchOrdersByTest() {
+	public void searchByStatusTest() {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getOrdersPageLink().click();
 		AdminOrdersPage aop = new AdminOrdersPage(driver);
-		aop.searchOrdersById("18");
+		aop.getSearchOrderByStatus("Pending");
+
 	}
 }

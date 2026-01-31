@@ -27,7 +27,7 @@ public class ChainGrid_WebDriver_Utility {
 	 */
 	public WebElement explicitWaitvisibilityOfElement(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		return wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
 	public WebElement explicitWaitElementToBeClickabe(WebDriver driver, WebElement element) {
