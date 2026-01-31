@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-29T20:36:23 IST" name="Default suite" finished-at="2026-01-29T20:36:27 IST" duration-ms="4024">
+    <groups>
+      <group name="smoke test">
+        <method signature="InvalidAdminLoginTest.verifyInvalidAdminloginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidAdminLoginTest@3590fc5b]" name="verifyInvalidAdminloginTest" class="com.tekpyramid.chaingrid.login.InvalidAdminLoginTest"/>
+      </group> <!-- smoke test -->
+    </groups>
+    <test started-at="2026-01-29T20:36:23 IST" name="Default test" finished-at="2026-01-29T20:36:27 IST" duration-ms="4024">
+      <class name="com.tekpyramid.chaingrid.login.InvalidAdminLoginTest">
+        <test-method signature="verifyInvalidAdminloginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidAdminLoginTest@3590fc5b]" started-at="2026-01-29T20:36:23 IST" name="verifyInvalidAdminloginTest" finished-at="2026-01-29T20:36:27 IST" duration-ms="3980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidAdminloginTest -->
+      </class> <!-- com.tekpyramid.chaingrid.login.InvalidAdminLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
