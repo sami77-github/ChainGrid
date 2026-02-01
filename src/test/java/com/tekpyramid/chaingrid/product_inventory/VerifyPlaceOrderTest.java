@@ -11,7 +11,7 @@ import com.tekpyramid.chaingrid.object_repository.RetailerHomePage;
 
 public class VerifyPlaceOrderTest extends RetailerBaseClass {
 
-	@Test
+	@Test(groups = "smoke test")
 	public void verifyRetailerPlaceOrder() {
 		MyOrderPage mo = new MyOrderPage(driver);
 		RetailerHomePage rhp = new RetailerHomePage(driver);

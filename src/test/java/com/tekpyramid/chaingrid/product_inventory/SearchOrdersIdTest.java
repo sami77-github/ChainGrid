@@ -8,7 +8,7 @@ import com.tekpyramid.chaingrid.object_repository.AdminOrdersPage;
 
 public class SearchOrdersIdTest extends AdminBaseClass {
 
-	@Test
+	@Test(groups = "smoke test")
 	public void searchOrdersByIdTest() {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getOrdersPageLink().click();

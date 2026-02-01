@@ -12,7 +12,7 @@ import com.tekpyramid.chaingrid.object_repository.ViewProductPage;
 
 public class VerifyManuViewAssighnedProductTest extends ManufacturerBaseClass {
 
-	@Test
+	@Test(groups = "smoke test")
 	public void manufacturerVerifyAssignedProduct() {
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
 		mhp.getViewProductLink().click();

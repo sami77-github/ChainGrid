@@ -1,7 +1,5 @@
 package com.tekpyramid.chaingrid.product_inventory;
 
-import java.util.List;
-
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -14,7 +12,7 @@ import com.tekpyramid.chaingrid.object_repository.ManufacturerHomePage;
 
 public class ManufacturerVerifyAddStockTest extends ManufacturerBaseClass {
 
-	@Test
+	@Test(groups = "smoke test")
 	public void verifyAddStock() throws InterruptedException {
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
 		mhp.getManageStocktLink().click();
