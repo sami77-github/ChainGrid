@@ -21,9 +21,9 @@ public class AdminVerifiesOrdersTest extends AdminBaseClass {
 		boolean flag = true;
 		for (WebElement id : orderIds) {
 			String text = id.getTagName();
-			if(text.equals(null)|text.isEmpty()) {
+			if (text.equals(null) | text.isEmpty()) {
 				flag = false;
-				System.out.println(text+" is not verified");
+				System.out.println(text + " is not verified");
 			}
 		}
 		Assert.assertTrue(flag);

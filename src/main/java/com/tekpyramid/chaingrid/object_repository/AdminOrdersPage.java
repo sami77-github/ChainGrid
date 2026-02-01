@@ -91,6 +91,12 @@ public class AdminOrdersPage {
 	@FindBy(xpath = "//table[@class='table_displayData']/tbody/tr/td[position()=5]")
 	private List<WebElement> verifyOrderStatus;
 	
+	@FindBy(xpath = "//table[@class='table_mainWrapper']//section//tbody//td[5]")
+	private List<WebElement> veirfyOrderStatusBy_Completed;
+
+	public List<WebElement> getverifyOrderStatusBy_Completed() {
+		return veirfyOrderStatusBy_Completed;
+	}
 
 	public List<WebElement> getVerifyOrderStatus() {
 		return verifyOrderStatus;
@@ -206,15 +212,31 @@ public class AdminOrdersPage {
 		sel2.selectByVisibleText(status);
 		getSearchBtn().click();
 		List<WebElement> orderStatus = getVerifyOrderStatus();
+		List<WebElement> orderStatus_completed = getverifyOrderStatusBy_Completed();
 		boolean flag = false;
-		String actOrderstatus = status;
-		for (WebElement status1 : orderStatus) {
-			String orderStatusText = status1.getText();
-			if(orderStatusText.contains(actOrderstatus)) {
-				flag = true;
+	
+		if(status.contains("Pending")) {
+			String actOrderstatus = status;
+			for (WebElement status1 : orderStatus) {
+				String orderStatusText = status1.getText();
+				if(orderStatusText.contains(actOrderstatus)) {
+					flag = true;
+				}
 			}
+			Assert.assertTrue(flag);
+			System.out.println(actOrderstatus+" is verified");
 		}
-		Assert.assertTrue(flag);
-		System.out.println(actOrderstatus+" is verified");
+		
+		else if(status.contains("Completed")) {
+			boolean flag1 = true;
+			for (WebElement completedStatus : orderStatus_completed) {
+				String status2 = completedStatus.getText();
+				if(status2.contains(status)){
+					flag = true;
+				}
+			}
+			Assert.assertTrue(flag1);
+			System.out.println(status+" is verified");
+		}
 	}
 }

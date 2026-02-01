@@ -13,7 +13,6 @@ public class SearchByStatusTest extends AdminBaseClass {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getOrdersPageLink().click();
 		AdminOrdersPage aop = new AdminOrdersPage(driver);
-		aop.getSearchOrderByStatus("Pending");
-
+		aop.getSearchOrderByStatus("Completed");
 	}
 }
