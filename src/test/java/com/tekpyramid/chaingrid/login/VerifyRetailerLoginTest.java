@@ -9,7 +9,7 @@ import com.tekpyramid.chaingrid.object_repository.RetailerHomePage;
 
 public class VerifyRetailerLoginTest extends RetailerBaseClass{
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyLoginTest() {
 		RetailerHomePage rhp = new RetailerHomePage(driver);
 		WebElement welcomeMsg = rhp.getRetailerWelcomeMsg();

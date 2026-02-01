@@ -16,7 +16,7 @@ import com.tekpyramid.chaingrid.object_repository.Login_Page;
 
 public class InvalidAdminLoginTest {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyInvalidAdminloginTest() throws IOException {
 	/*
 	 * verify the error message by entering invalid credentials

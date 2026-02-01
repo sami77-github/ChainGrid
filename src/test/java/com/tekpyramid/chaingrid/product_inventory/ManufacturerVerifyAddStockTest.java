@@ -12,7 +12,7 @@ import com.tekpyramid.chaingrid.object_repository.ManufacturerHomePage;
 
 public class ManufacturerVerifyAddStockTest extends ManufacturerBaseClass {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyAddStock() throws InterruptedException {
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
 		mhp.getManageStocktLink().click();

@@ -10,7 +10,7 @@ import com.tekpyramid.chaingrid.object_repository.AdminHomePage;
 
 public class VerifyAdminLoginTest extends AdminBaseClass {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyAdminLogin() {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		WebElement welcomeMsg = ahp.getAdminWelcomeMsg();

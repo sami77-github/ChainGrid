@@ -12,7 +12,7 @@ import com.tekpyramid.chaingrid.object_repository.AdminOrdersPage;
 
 public class AdminVerifiesOrdersTest extends AdminBaseClass {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyAdminViewsOrders() {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getOrdersPageLink().click();

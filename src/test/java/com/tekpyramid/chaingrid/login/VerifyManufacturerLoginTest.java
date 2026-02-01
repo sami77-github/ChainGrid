@@ -9,7 +9,7 @@ import com.tekpyramid.chaingrid.object_repository.ManufacturerHomePage;
 
 public class VerifyManufacturerLoginTest extends ManufacturerBaseClass {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyManufacturerLogin() {
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
 		WebElement welcome = mhp.getManWelcomeMsg();

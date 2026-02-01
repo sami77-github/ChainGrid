@@ -15,7 +15,7 @@ import com.tekpyramid.chaingrid.object_repository.ViewProductPage;
 
 public class VerifyAdminAddProductTest extends AdminBaseClass {
 
-	@Test(groups = "smoke test")
+	@Test(groups = "smoke")
 	public void verifyAdminAddsNewProduct() throws EncryptedDocumentException, IOException {
 		boolean flag = false;
 		AdminHomePage ahp = new AdminHomePage(driver);
