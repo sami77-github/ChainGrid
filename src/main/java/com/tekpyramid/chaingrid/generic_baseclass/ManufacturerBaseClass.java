@@ -10,13 +10,13 @@ import com.tekpyramid.chaingrid.object_repository.Login_Page;
 
 public class ManufacturerBaseClass extends SuperBaseClass {
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void loginAsManufacturer() throws IOException {
 		Login_Page lp = new Login_Page(driver);
 		lp.manufacturerLogin();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void logoutAsManufactrer() throws IOException {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.logoutFromAdmin();

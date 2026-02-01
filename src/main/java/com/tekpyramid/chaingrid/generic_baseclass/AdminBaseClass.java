@@ -13,13 +13,13 @@ import com.tekpyramid.chaingrid.object_repository.Login_Page;
 public class AdminBaseClass extends SuperBaseClass {
 
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void loginAsAdmin() throws IOException {
 		Login_Page lp = new Login_Page(driver);
 		lp.adminLogin();
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void logoutAsAdmin() throws IOException {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getLogOutBtn().click();
