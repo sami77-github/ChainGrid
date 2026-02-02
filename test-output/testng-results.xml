@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-02T02:06:14 IST" name="Default suite" finished-at="2026-02-02T02:06:18 IST" duration-ms="3982">
+  <suite started-at="2026-02-03T00:57:29 IST" name="Default suite" finished-at="2026-02-03T00:57:39 IST" duration-ms="9904">
     <groups>
       <group name="smoke">
-        <method signature="SearchByStatusTest.searchByStatusTest()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" name="searchByStatusTest" class="com.tekpyramid.chaingrid.login.SearchByStatusTest"/>
+        <method signature="ManufacturerVerifyAddStockTest.verifyAddStock()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" name="verifyAddStock" class="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-02T02:06:14 IST" name="Default test" finished-at="2026-02-02T02:06:18 IST" duration-ms="3982">
-      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:14 IST" name="beforeSuitConfigMethod" finished-at="2026-02-02T02:06:14 IST" duration-ms="12" status="PASS">
+    <test started-at="2026-02-03T00:57:29 IST" name="Default test" finished-at="2026-02-03T00:57:39 IST" duration-ms="9904">
+      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:29 IST" name="beforeSuitConfigMethod" finished-at="2026-02-03T00:57:29 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:14 IST" name="beforeClassConfigMethod" finished-at="2026-02-02T02:06:16 IST" duration-ms="1911" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:29 IST" name="beforeClassConfigMethod" finished-at="2026-02-03T00:57:35 IST" duration-ms="5432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@c6c11318]]>
+                <![CDATA[org.testng.xml.XmlTest@70237f07]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="loginAsAdmin()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:16 IST" name="loginAsAdmin" finished-at="2026-02-02T02:06:17 IST" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="loginAsManufacturer()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:35 IST" name="loginAsManufacturer" finished-at="2026-02-03T00:57:36 IST" duration-ms="833" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsAdmin -->
-        <test-method signature="searchByStatusTest()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:17 IST" name="searchByStatusTest" finished-at="2026-02-02T02:06:18 IST" duration-ms="1102" status="PASS">
+        </test-method> <!-- loginAsManufacturer -->
+        <test-method signature="verifyAddStock()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:36 IST" name="verifyAddStock" finished-at="2026-02-03T00:57:37 IST" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchByStatusTest -->
-        <test-method is-config="true" signature="logoutAsAdmin()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:18 IST" name="logoutAsAdmin" finished-at="2026-02-02T02:06:18 IST" duration-ms="150" status="PASS">
+        </test-method> <!-- verifyAddStock -->
+        <test-method is-config="true" signature="logoutAsManufactrer()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:37 IST" name="logoutAsManufactrer" finished-at="2026-02-03T00:57:37 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutAsAdmin -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:18 IST" name="afterClassConfigMethod" finished-at="2026-02-02T02:06:18 IST" duration-ms="268" status="PASS">
+        </test-method> <!-- logoutAsManufactrer -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:37 IST" name="afterClassConfigMethod" finished-at="2026-02-03T00:57:39 IST" duration-ms="2385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.SearchByStatusTest@233795b6]" started-at="2026-02-02T02:06:18 IST" name="afterSuiteConfigMethod" finished-at="2026-02-02T02:06:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest@233795b6]" started-at="2026-02-03T00:57:39 IST" name="afterSuiteConfigMethod" finished-at="2026-02-03T00:57:39 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

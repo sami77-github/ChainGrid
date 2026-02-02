@@ -13,6 +13,6 @@ public class SearchOrderByRetailerTest extends AdminBaseClass {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getOrdersPageLink().click();
 		AdminOrdersPage aop = new AdminOrdersPage(driver);
-		aop.searchOrderByretailerTest("SRKJ (Sarkhej)");
+		aop.searchOrderByretailerTest("VSTR (Vastrapur)");
 	}
 }

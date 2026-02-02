@@ -61,7 +61,7 @@ public class AdminOrdersPage {
 	@FindBy(xpath = "//input[@id='txtId']")
 	private WebElement enterIdField;
 	
-	@FindBy(id = "cmbStatus")
+	@FindBy(id = "cmbRetailer")
 	private WebElement searchOrderBy2_DD;
 	
 	@FindBy(xpath = "//option[normalize-space()='SRKJ (Sarkhej)'][1]")
@@ -185,8 +185,8 @@ public class AdminOrdersPage {
 	public void searchOrderByretailerTest(String selectRetailer) {
 		Select sel = new Select(getSearchByDropdown1());
 		sel.selectByVisibleText(selectByRetailer.getText());
-		ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
-		wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
+		//ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
+		//wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
 		Select sel2 = new Select(searchOrderBy2_DD);
 		sel2.selectByVisibleText(selectRetailer);
 		getSearchBtn().click();
