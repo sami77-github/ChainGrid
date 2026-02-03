@@ -77,7 +77,7 @@ public class SuperBaseClass
 	@AfterClass(alwaysRun=true)
 	public void afterClassConfigMethod()
 	{
-		driver.manage().window().minimize();
+		//driver.manage().window().minimize();
 		driver.quit();
 		UtilityClassObject.removerDriver(); //to remove all the local driver instances from thread local...
 		System.out.println("browser closed...");

@@ -11,39 +11,17 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest">
+      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
         <methods>
           <include name="logoutAsAdmin"/>
-          <include name="beforeSuitConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="loginAsAdmin"/>
-          <include name="verifyAdminAddsNewProduct"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
-        <methods>
-          <include name="loginAsManufacturer"/>
-          <include name="logoutAsManufactrer"/>
           <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="verifyAddStock"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest">
-        <methods>
-          <include name="logoutAsAdmin"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="searchOrderByRetailerTest"/>
           <include name="afterSuiteConfigMethod"/>
           <include name="loginAsAdmin"/>
           <include name="afterClassConfigMethod"/>
+          <include name="searchByStatusTest"/>
         </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest -->
+      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [smoke_suite] -->

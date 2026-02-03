@@ -64,6 +64,17 @@ public class AdminOrdersPage {
 	@FindBy(id = "cmbRetailer")
 	private WebElement searchOrderBy2_DD;
 	
+	@FindBy(id = "cmbStatus")
+	private WebElement searchOrderByStatus_DD;
+	
+	public WebElement getSearchOrderByStatus_DD() {
+		return searchOrderByStatus_DD;
+	}
+
+	public List<WebElement> getVeirfyOrderStatusBy_Completed() {
+		return veirfyOrderStatusBy_Completed;
+	}
+
 	@FindBy(xpath = "//option[normalize-space()='SRKJ (Sarkhej)'][1]")
 	private WebElement searchByVisible_SRKJ;
 	
@@ -207,8 +218,8 @@ public class AdminOrdersPage {
 		Select sel = new Select(getSearchByDropdown1());
 		sel.selectByVisibleText(selectByStatus.getText());
 		ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
-		wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
-		Select sel2 = new Select(searchOrderBy2_DD);
+		wu.explicitWaitvisibilityOfElement(driver, searchOrderByStatus_DD);
+		Select sel2 = new Select(searchOrderByStatus_DD);
 		sel2.selectByVisibleText(status);
 		getSearchBtn().click();
 		List<WebElement> orderStatus = getVerifyOrderStatus();
