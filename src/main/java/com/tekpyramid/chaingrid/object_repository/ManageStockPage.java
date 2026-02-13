@@ -32,6 +32,13 @@ public class ManageStockPage {
 	
 	@FindBy(xpath = "//table[@class=\"table_displayData\"]//input")
 	private List<WebElement> stockQuantityFields;
+	
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
+
+	public WebElement getProductLink() {
+		return productLink;
+	}
 
 	public List<WebElement> getStockQuantityFields() {
 		return stockQuantityFields;
