@@ -2,47 +2,50 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-15T22:34:32 IST" name="Default suite" finished-at="2026-02-15T22:34:44 IST" duration-ms="11909">
+  <suite started-at="2026-02-16T00:21:34 IST" name="Default suite" finished-at="2026-02-16T00:21:42 IST" duration-ms="8116">
     <groups>
+      <group name="smoke">
+        <method signature="VerifyAdminLoginTest.verifyAdminLogin()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" name="verifyAdminLogin" class="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-15T22:34:32 IST" name="Default test" finished-at="2026-02-15T22:34:44 IST" duration-ms="11909">
-      <class name="com.tekpyramid.chaingrid.object_repository.CreateOrderTest">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:32 IST" name="beforeSuitConfigMethod" finished-at="2026-02-15T22:34:32 IST" duration-ms="9" status="PASS">
+    <test started-at="2026-02-16T00:21:34 IST" name="Default test" finished-at="2026-02-16T00:21:42 IST" duration-ms="8116">
+      <class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:34 IST" name="beforeSuitConfigMethod" finished-at="2026-02-16T00:21:34 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:32 IST" name="beforeClassConfigMethod" finished-at="2026-02-15T22:34:39 IST" duration-ms="6637" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:34 IST" name="beforeClassConfigMethod" finished-at="2026-02-16T00:21:40 IST" duration-ms="6059" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@a03c9395]]>
+                <![CDATA[org.testng.xml.XmlTest@844259d0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="loginAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:39 IST" name="loginAsRetailer" finished-at="2026-02-15T22:34:40 IST" duration-ms="878" status="PASS">
+        <test-method is-config="true" signature="loginAsAdmin()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:40 IST" name="loginAsAdmin" finished-at="2026-02-16T00:21:41 IST" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsRetailer -->
-        <test-method signature="createOrder()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:40 IST" name="createOrder" finished-at="2026-02-15T22:34:43 IST" duration-ms="3163" status="PASS">
+        </test-method> <!-- loginAsAdmin -->
+        <test-method signature="verifyAdminLogin()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:41 IST" name="verifyAdminLogin" finished-at="2026-02-16T00:21:41 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrder -->
-        <test-method is-config="true" signature="logoutAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:43 IST" name="logoutAsRetailer" finished-at="2026-02-15T22:34:43 IST" duration-ms="246" status="PASS">
+        </test-method> <!-- verifyAdminLogin -->
+        <test-method is-config="true" signature="logoutAsAdmin()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:41 IST" name="logoutAsAdmin" finished-at="2026-02-16T00:21:41 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutAsRetailer -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:43 IST" name="afterClassConfigMethod" finished-at="2026-02-15T22:34:44 IST" duration-ms="939" status="PASS">
+        </test-method> <!-- logoutAsAdmin -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:41 IST" name="afterClassConfigMethod" finished-at="2026-02-16T00:21:42 IST" duration-ms="830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:44 IST" name="afterSuiteConfigMethod" finished-at="2026-02-15T22:34:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyAdminLoginTest@233795b6]" started-at="2026-02-16T00:21:42 IST" name="afterSuiteConfigMethod" finished-at="2026-02-16T00:21:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.tekpyramid.chaingrid.object_repository.CreateOrderTest -->
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyAdminLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
