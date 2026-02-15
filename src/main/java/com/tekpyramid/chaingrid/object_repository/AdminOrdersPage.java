@@ -1,6 +1,7 @@
 package com.tekpyramid.chaingrid.object_repository;
 
 import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,13 @@ public class AdminOrdersPage {
 	@FindBy(xpath = "//table[@class='table_displayData']//tr/td[1]")
 	private List<WebElement> orderIds;
 	
+	@FindBy(xpath = "//table[@class='table_displayData']//tr/td[position()=1]")
+	private List<WebElement> allOrderIds;
+	
+	public List<WebElement> getAllOrderIds() {
+		return allOrderIds;
+	}
+
 	@FindBy(id = "cmbFilter")
 	private WebElement searchByDropdown1;
 	
@@ -61,9 +69,20 @@ public class AdminOrdersPage {
 	@FindBy(xpath = "//input[@id='txtId']")
 	private WebElement enterIdField;
 	
-	@FindBy(id = "cmbStatus")
+	@FindBy(id = "cmbRetailer")
 	private WebElement searchOrderBy2_DD;
 	
+	@FindBy(id = "cmbStatus")
+	private WebElement searchOrderByStatus_DD;
+	
+	public WebElement getSearchOrderByStatus_DD() {
+		return searchOrderByStatus_DD;
+	}
+
+	public List<WebElement> getVeirfyOrderStatusBy_Completed() {
+		return veirfyOrderStatusBy_Completed;
+	}
+
 	@FindBy(xpath = "//option[normalize-space()='SRKJ (Sarkhej)'][1]")
 	private WebElement searchByVisible_SRKJ;
 	
@@ -185,8 +204,8 @@ public class AdminOrdersPage {
 	public void searchOrderByretailerTest(String selectRetailer) {
 		Select sel = new Select(getSearchByDropdown1());
 		sel.selectByVisibleText(selectByRetailer.getText());
-		ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
-		wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
+		//ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
+		//wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
 		Select sel2 = new Select(searchOrderBy2_DD);
 		sel2.selectByVisibleText(selectRetailer);
 		getSearchBtn().click();
@@ -207,8 +226,8 @@ public class AdminOrdersPage {
 		Select sel = new Select(getSearchByDropdown1());
 		sel.selectByVisibleText(selectByStatus.getText());
 		ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
-		wu.explicitWaitvisibilityOfElement(driver, searchOrderBy2_DD);
-		Select sel2 = new Select(searchOrderBy2_DD);
+		wu.explicitWaitvisibilityOfElement(driver, searchOrderByStatus_DD);
+		Select sel2 = new Select(searchOrderByStatus_DD);
 		sel2.selectByVisibleText(status);
 		getSearchBtn().click();
 		List<WebElement> orderStatus = getVerifyOrderStatus();

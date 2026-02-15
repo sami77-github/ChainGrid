@@ -3,6 +3,7 @@ package com.tekpyramid.chaingrid.generic_utility;
 import java.time.Duration;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,9 +36,9 @@ public class ChainGrid_WebDriver_Utility {
 		return wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(element)));
 	}
 	
-	public WebElement explicitWaitAlert(WebDriver driver) {
+	public Alert explicitWaitAlert(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		return (WebElement) wait.until(ExpectedConditions.alertIsPresent());
+		return wait.until(ExpectedConditions.alertIsPresent());
 	}
 
 	/*

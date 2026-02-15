@@ -19,12 +19,26 @@ public class ManageStockPage {
 
 	@FindBy(id = "btnSubmit")
 	private WebElement updateStockBtn;
+	
+	@FindBy(xpath = "//input[@name='txtQuantity[11]']")
+	private WebElement pizzaSouceQuantityfield;
+
+	public WebElement getPizzaSouceQuantityfield() {
+		return pizzaSouceQuantityfield;
+	}
 
 	@FindBy(xpath = "//input[@value='Log out']")
 	private WebElement logoutBtn;
 	
 	@FindBy(xpath = "//table[@class=\"table_displayData\"]//input")
 	private List<WebElement> stockQuantityFields;
+	
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
+
+	public WebElement getProductLink() {
+		return productLink;
+	}
 
 	public List<WebElement> getStockQuantityFields() {
 		return stockQuantityFields;

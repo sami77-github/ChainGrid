@@ -11,105 +11,17 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest">
-        <methods>
-          <include name="beforeClassConfigMethod"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="searchOrdersByIdTest"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest -->
-      <class name="com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest">
-        <methods>
-          <include name="beforeClassConfigMethod"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="verifyLoginTest"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest -->
-      <class name="com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest">
-        <methods>
-          <include name="beforeClassConfigMethod"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="verifyManufacturerLogin"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest -->
       <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
         <methods>
-          <include name="beforeSuitConfigMethod"/>
+          <include name="logoutAsAdmin"/>
           <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
           <include name="afterClassConfigMethod"/>
           <include name="searchByStatusTest"/>
         </methods>
       </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest">
-        <methods>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="verifyAdminAddsNewProduct"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
-        <methods>
-          <include name="beforeClassConfigMethod"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-          <include name="verifyRetailerPlaceOrder"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
-        <methods>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="verifyAddStock"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest">
-        <methods>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="searchOrderByRetailerTest"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest">
-        <methods>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="manufacturerVerifyAssignedProduct"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest -->
-      <class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest">
-        <methods>
-          <include name="verifyAdminLogin"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.login.VerifyAdminLoginTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest">
-        <methods>
-          <include name="beforeSuitConfigMethod"/>
-          <include name="beforeClassConfigMethod"/>
-          <include name="afterSuiteConfigMethod"/>
-          <include name="afterClassConfigMethod"/>
-          <include name="verifyAdminViewsOrders"/>
-        </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [smoke_suite] -->

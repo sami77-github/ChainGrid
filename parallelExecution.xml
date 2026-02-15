@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Parallel_Suite">
+	<listeners>
+		<listener
+			class-name="com.tekpyramid.chaingrid.generic_listenerimpclass.ListImpClass"></listener>
+	</listeners>
+	<test thread-count="2" parallel="tests" name="smoke_Test_1">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest" />
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest" />
+			<class name="com.tekpyramid.chaingrid.login.SearchByStatusTest" />
+			<class name="com.tekpyramid.chaingrid.login.InvalidAdminLoginTest" />
+			<class
+				name="com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest" />
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest" />
+
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="2" parallel="tests" name="smoke_Test_2">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest" />
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest" />
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest" />
+			<class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest" />
+			<class name="com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest" />
+			<class
+				name="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest" />
+		</classes>
+	</test> <!--
+	Test -->
+
+</suite> <!--
+Parallel_Suite -->
