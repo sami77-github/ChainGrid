@@ -28,6 +28,11 @@ public class RetailerHomePage {
 	@FindBy(xpath = "//input[@value='Post Order']")
 	private WebElement postOrderBtn;
 	
+	public WebElement getPriceViaProductName(String productName) {
+		WebElement price = driver.findElement(By.xpath("//td[normalize-space()='"+productName+"']/parent::tr/td[position()=6]"));
+		return price;
+	}
+	
 	public WebElement getPostOrderBtn() {
 		return postOrderBtn;
 	}

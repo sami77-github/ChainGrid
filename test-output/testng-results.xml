@@ -1,90 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-14T03:31:24 IST" name="Default suite" finished-at="2026-02-14T03:31:38 IST" duration-ms="14340">
+  <suite started-at="2026-02-15T22:34:32 IST" name="Default suite" finished-at="2026-02-15T22:34:44 IST" duration-ms="11909">
     <groups>
     </groups>
-    <test started-at="2026-02-14T03:31:24 IST" name="Default test" finished-at="2026-02-14T03:31:38 IST" duration-ms="14340">
-      <class name="com.tekpyramid.chaingrid.login.VerifyTotalPriceTest">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:24 IST" name="beforeSuitConfigMethod" finished-at="2026-02-14T03:31:24 IST" duration-ms="9" status="PASS">
+    <test started-at="2026-02-15T22:34:32 IST" name="Default test" finished-at="2026-02-15T22:34:44 IST" duration-ms="11909">
+      <class name="com.tekpyramid.chaingrid.object_repository.CreateOrderTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:32 IST" name="beforeSuitConfigMethod" finished-at="2026-02-15T22:34:32 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:24 IST" name="beforeClassConfigMethod" finished-at="2026-02-14T03:31:29 IST" duration-ms="4993" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:32 IST" name="beforeClassConfigMethod" finished-at="2026-02-15T22:34:39 IST" duration-ms="6637" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@a39c9b23]]>
+                <![CDATA[org.testng.xml.XmlTest@a03c9395]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="loginAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:29 IST" name="loginAsRetailer" finished-at="2026-02-14T03:31:30 IST" duration-ms="669" status="PASS">
+        <test-method is-config="true" signature="loginAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:39 IST" name="loginAsRetailer" finished-at="2026-02-15T22:34:40 IST" duration-ms="878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsRetailer -->
-        <test-method signature="verifyTotalPriceTest()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:30 IST" name="verifyTotalPriceTest" finished-at="2026-02-14T03:31:37 IST" duration-ms="7619" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [1200.0] but found [200.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1200.0] but found [200.0]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:765)
-at org.testng.Assert.assertEquals(Assert.java:785)
-at com.tekpyramid.chaingrid.login.VerifyTotalPriceTest.verifyTotalPriceTest(VerifyTotalPriceTest.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createOrder()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:40 IST" name="createOrder" finished-at="2026-02-15T22:34:43 IST" duration-ms="3163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTotalPriceTest -->
-        <test-method is-config="true" signature="logoutAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:37 IST" name="logoutAsRetailer" finished-at="2026-02-14T03:31:37 IST" duration-ms="135" status="PASS">
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="logoutAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:43 IST" name="logoutAsRetailer" finished-at="2026-02-15T22:34:43 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutAsRetailer -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:37 IST" name="afterClassConfigMethod" finished-at="2026-02-14T03:31:38 IST" duration-ms="887" status="PASS">
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:43 IST" name="afterClassConfigMethod" finished-at="2026-02-15T22:34:44 IST" duration-ms="939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.VerifyTotalPriceTest@185a6e9]" started-at="2026-02-14T03:31:38 IST" name="afterSuiteConfigMethod" finished-at="2026-02-14T03:31:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.object_repository.CreateOrderTest@3eb25e1a]" started-at="2026-02-15T22:34:44 IST" name="afterSuiteConfigMethod" finished-at="2026-02-15T22:34:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.tekpyramid.chaingrid.login.VerifyTotalPriceTest -->
+      </class> <!-- com.tekpyramid.chaingrid.object_repository.CreateOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,6 +1,7 @@
 package com.tekpyramid.chaingrid.object_repository;
 
 import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +23,13 @@ public class AdminOrdersPage {
 	@FindBy(xpath = "//table[@class='table_displayData']//tr/td[1]")
 	private List<WebElement> orderIds;
 	
+	@FindBy(xpath = "//table[@class='table_displayData']//tr/td[position()=1]")
+	private List<WebElement> allOrderIds;
+	
+	public List<WebElement> getAllOrderIds() {
+		return allOrderIds;
+	}
+
 	@FindBy(id = "cmbFilter")
 	private WebElement searchByDropdown1;
 	
