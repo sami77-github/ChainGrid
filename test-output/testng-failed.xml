@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tekpyramid.chaingrid.object_repository.CreateOrderTest">
+      <class name="com.tekpyramid.chaingrid.product_inventory.AddUnitTest">
         <methods>
-          <include name="beforeSuitConfigMethod"/>
+          <include name="logoutAsAdmin"/>
+          <include name="addUnitTest"/>
           <include name="beforeClassConfigMethod"/>
-          <include name="createOrder"/>
-          <include name="logoutAsRetailer"/>
+          <include name="beforeSuitConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
-          <include name="loginAsRetailer"/>
+          <include name="loginAsAdmin"/>
           <include name="afterClassConfigMethod"/>
         </methods>
-      </class> <!-- com.tekpyramid.chaingrid.object_repository.CreateOrderTest -->
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AddUnitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
