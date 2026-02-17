@@ -11,17 +11,28 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
         <methods>
-          <include name="logoutAsAdmin"/>
           <include name="beforeClassConfigMethod"/>
           <include name="beforeSuitConfigMethod"/>
+          <include name="logoutAsRetailer"/>
           <include name="afterSuiteConfigMethod"/>
-          <include name="loginAsAdmin"/>
+          <include name="loginAsRetailer"/>
           <include name="afterClassConfigMethod"/>
-          <include name="searchByStatusTest"/>
+          <include name="verifyRetailerPlaceOrder"/>
         </methods>
-      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
+        <methods>
+          <include name="loginAsManufacturer"/>
+          <include name="logoutAsManufactrer"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="verifyAddStock"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [smoke_suite] -->

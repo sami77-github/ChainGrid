@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Full_Regression_Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tekpyramid.chaingrid.generic_listenerimpclass.ListImpClass"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Test_2(failed)">
+    <classes>
+      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
+        <methods>
+          <include name="loginAsManufacturer"/>
+          <include name="logoutAsManufactrer"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="verifyAddStock"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AddUnitTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="addUnitTest"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AddUnitTest -->
+    </classes>
+  </test> <!-- Test_2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test_0(failed)">
+    <classes>
+      <class name="com.tekpyramid.chaingrid.login.VerifyTotalPrice">
+        <methods>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="verifyTotalPriceTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="logoutAsRetailer"/>
+          <include name="loginAsRetailer"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyTotalPrice -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AdminUpdatesProductTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="updateStockTest"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminUpdatesProductTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
+        <methods>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="logoutAsRetailer"/>
+          <include name="loginAsRetailer"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyRetailerPlaceOrder"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
+    </classes>
+  </test> <!-- Test_0(failed) -->
+</suite> <!-- Failed suite [Full_Regression_Suite] -->

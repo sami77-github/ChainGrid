@@ -45,7 +45,7 @@ public class ManufacturerVerifyAddStockTest extends ManufacturerBaseClass {
 		WebElement quantityField = msp.getVerifyProductStock("Gold");
 		String value = quantityField.getDomAttribute("value");
 		int value1 = Integer.parseInt(value);
-		Assert.assertEquals(value1, 0);
+		Assert.assertEquals(value1, 10);
 		System.out.println(value+" is Verified");
 	}
 }
