@@ -2,11 +2,13 @@ package com.tekpyramid.chaingrid.product_inventory;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tekpyramid.chaingrid.generic_baseclass.AdminBaseClass;
+import com.tekpyramid.chaingrid.generic_utility.ChainGrid_WebDriver_Utility;
 import com.tekpyramid.chaingrid.object_repository.AddUnitPage;
 import com.tekpyramid.chaingrid.object_repository.AdminHomePage;
 import com.tekpyramid.chaingrid.object_repository.ViewUnitPage;
@@ -18,19 +20,24 @@ public class AddUnitTest extends AdminBaseClass {
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.getManageUnitLink().click();
 		ViewUnitPage vup = new ViewUnitPage(driver);
-		vup.getAddUnitBtn().click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", vup.getAddUnitBtn());
+		//vup.getAddUnitBtn().click();
 		AddUnitPage aup = new AddUnitPage(driver);
-		aup.getUnitNamefield().sendKeys("dollar");
-		aup.getUnitNameDetailsBox().sendKeys("1 dollar = 90 rupees");
+		aup.getUnitNamefield().sendKeys("Piece");
+		aup.getUnitNameDetailsBox().sendKeys("it is piece Unit");
 		aup.getAddUnitBtn().click();
 		driver.switchTo().alert().accept();
+		ahp = new AdminHomePage(driver);
+		ChainGrid_WebDriver_Utility wu = new ChainGrid_WebDriver_Utility();
+		wu.explicitWaitElementToBeClickabe(driver, ahp.getManageUnitLink());
 		ahp.getManageUnitLink().click();
 		List<WebElement> allUnits = vup.getUnitNames();
 		boolean flag = false;
 		String unitText = "";
 		for (WebElement unit : allUnits) {
 			unitText = unit.getText();
-			if (unitText.contains("dollar")) {
+			if (unitText.contains("Piece")) {
 				flag = true;
 				break;
 			}
