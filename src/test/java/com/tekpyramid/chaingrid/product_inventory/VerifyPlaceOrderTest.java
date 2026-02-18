@@ -23,8 +23,9 @@ public class VerifyPlaceOrderTest extends RetailerBaseClass {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", postOrderBtn);
-
-		postOrderBtn.click();
+		js.executeScript("arguments[0].click;", postOrderBtn);
+		//postOrderBtn.click();
+		System.out.println("done");
 
 		mo.verifyOrderPlaceTest();
 	}

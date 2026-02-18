@@ -1,75 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T02:56:55 IST" name="Default suite" finished-at="2026-02-18T02:57:05 IST" duration-ms="9305">
+  <suite started-at="2026-02-18T21:57:56 IST" name="Default suite" finished-at="2026-02-18T21:58:24 IST" duration-ms="27544">
     <groups>
-      <group name="regression">
-        <method signature="InvalidLoginsTest.invalidAdminLoginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" name="invalidAdminLoginTest" class="com.tekpyramid.chaingrid.login.InvalidLoginsTest"/>
-      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="VerifyPlaceOrderTest.verifyRetailerPlaceOrder()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" name="verifyRetailerPlaceOrder" class="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-18T02:56:55 IST" name="Default test" finished-at="2026-02-18T02:57:05 IST" duration-ms="9305">
-      <class name="com.tekpyramid.chaingrid.login.InvalidLoginsTest">
-        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:56:55 IST" name="beforeSuitConfigMethod" finished-at="2026-02-18T02:56:55 IST" duration-ms="14" status="PASS">
+    <test started-at="2026-02-18T21:57:56 IST" name="Default test" finished-at="2026-02-18T21:58:24 IST" duration-ms="27544">
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
+        <test-method is-config="true" signature="beforeSuitConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:57:56 IST" name="beforeSuitConfigMethod" finished-at="2026-02-18T21:57:56 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitConfigMethod -->
-        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:56:55 IST" name="beforeClassConfigMethod" finished-at="2026-02-18T02:57:02 IST" duration-ms="6312" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfigMethod(org.testng.xml.XmlTest)[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:57:56 IST" name="beforeClassConfigMethod" finished-at="2026-02-18T21:58:01 IST" duration-ms="4973" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.xml.XmlTest@72b3df1d]]>
+                <![CDATA[org.testng.xml.XmlTest@b3d3cced]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassConfigMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:02 IST" name="setup" finished-at="2026-02-18T02:57:02 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="loginAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:58:01 IST" name="loginAsRetailer" finished-at="2026-02-18T21:58:02 IST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidAdminLoginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:02 IST" name="invalidAdminLoginTest" finished-at="2026-02-18T02:57:03 IST" duration-ms="746" status="PASS">
+        </test-method> <!-- loginAsRetailer -->
+        <test-method signature="verifyRetailerPlaceOrder()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:58:02 IST" name="verifyRetailerPlaceOrder" finished-at="2026-02-18T21:58:22 IST" duration-ms="20648" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #cmbFilter
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4e14be45-08d2-437d-9f06-233631576593, findElement {using=id, value=cmbFilter}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.4, moz:accessibilityChecks: false, moz:buildID: 20260212191108, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9304, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 4e14be45-08d2-437d-9f06-233631576593]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #cmbFilter
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4e14be45-08d2-437d-9f06-233631576593, findElement {using=id, value=cmbFilter}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.4, moz:accessibilityChecks: false, moz:buildID: 20260212191108, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9304, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 4e14be45-08d2-437d-9f06-233631576593
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:41)
+at com.tekpyramid.chaingrid.object_repository.MyOrderPage.verifyOrderPlaceTest(MyOrderPage.java:71)
+at com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest.verifyRetailerPlaceOrder(VerifyPlaceOrderTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidAdminLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:03 IST" name="tearDown" finished-at="2026-02-18T02:57:03 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- verifyRetailerPlaceOrder -->
+        <test-method is-config="true" signature="logoutAsRetailer()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:58:22 IST" name="logoutAsRetailer" finished-at="2026-02-18T21:58:22 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:03 IST" name="setup" finished-at="2026-02-18T02:57:03 IST" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidManufacturerLoginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:03 IST" name="invalidManufacturerLoginTest" finished-at="2026-02-18T02:57:03 IST" duration-ms="374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidManufacturerLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:03 IST" name="tearDown" finished-at="2026-02-18T02:57:03 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:03 IST" name="setup" finished-at="2026-02-18T02:57:04 IST" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidRetailerLoginTest()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:04 IST" name="invalidRetailerLoginTest" finished-at="2026-02-18T02:57:04 IST" duration-ms="317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidRetailerLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:04 IST" name="tearDown" finished-at="2026-02-18T02:57:04 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:04 IST" name="afterClassConfigMethod" finished-at="2026-02-18T02:57:05 IST" duration-ms="851" status="PASS">
+        </test-method> <!-- logoutAsRetailer -->
+        <test-method is-config="true" signature="afterClassConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:58:22 IST" name="afterClassConfigMethod" finished-at="2026-02-18T21:58:24 IST" duration-ms="1221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClassConfigMethod -->
-        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.login.InvalidLoginsTest@77c2494c]" started-at="2026-02-18T02:57:05 IST" name="afterSuiteConfigMethod" finished-at="2026-02-18T02:57:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuiteConfigMethod()[pri:0, instance:com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest@233795b6]" started-at="2026-02-18T21:58:24 IST" name="afterSuiteConfigMethod" finished-at="2026-02-18T21:58:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteConfigMethod -->
-      </class> <!-- com.tekpyramid.chaingrid.login.InvalidLoginsTest -->
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
