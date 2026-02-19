@@ -6,6 +6,41 @@
   </listeners>
   <test thread-count="3" parallel="tests" name="Test_1(failed)">
     <classes>
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest">
+        <methods>
+          <include name="loginAsManufacturer"/>
+          <include name="logoutAsManufactrer"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="manufacturerVerifyAssignedProduct"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest -->
+      <class name="com.tekpyramid.chaingrid.login.InvalidLoginsTest">
+        <methods>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="invalidAdminLoginTest"/>
+          <include name="setup"/>
+          <include name="invalidManufacturerLoginTest"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="tearDown"/>
+          <include name="invalidRetailerLoginTest"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.InvalidLoginsTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="searchOrderByRetailerTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest -->
       <class name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest">
         <methods>
           <include name="logoutAsAdmin"/>
@@ -17,6 +52,17 @@
           <include name="afterClassConfigMethod"/>
         </methods>
       </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest -->
+      <class name="com.tekpyramid.chaingrid.login.VerifyOrdersAreListedTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="verifyOrders"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyOrdersAreListedTest -->
     </classes>
   </test> <!-- Test_1(failed) -->
   <test thread-count="3" parallel="tests" name="Test_0(failed)">
@@ -43,6 +89,17 @@
           <include name="afterClassConfigMethod"/>
         </methods>
       </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminUpdatesProductTest -->
+      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="searchByStatusTest"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
       <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
         <methods>
           <include name="beforeClassConfigMethod"/>
@@ -56,4 +113,52 @@
       </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
     </classes>
   </test> <!-- Test_0(failed) -->
+  <test thread-count="3" parallel="tests" name="Test_2(failed)">
+    <classes>
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="searchOrdersByIdTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyAdminViewsOrders"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AddUnitTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="addUnitTest"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AddUnitTest -->
+      <class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest">
+        <methods>
+          <include name="verifyAdminLogin"/>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyAdminLoginTest -->
+    </classes>
+  </test> <!-- Test_2(failed) -->
 </suite> <!-- Failed suite [Full_Regression_Suite] -->
