@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.xml.XmlTest;
 import com.tekpyramid.chaingrid.generic_utility.ChainGrid_Properties_Utility;
 
@@ -27,7 +28,7 @@ public class SuperBaseClass
 		System.out.println("suit level configuration start");
 		System.out.println("database connected");
 	}
-	
+
 	@BeforeClass(alwaysRun=true)
 	public void beforeClassConfigMethod(XmlTest test) throws IOException
 	{

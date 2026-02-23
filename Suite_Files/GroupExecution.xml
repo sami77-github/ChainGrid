@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Suite">
-	<test thread-count="2" parallel="tests" name="Test_Runner_1">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
 		<classes>
 			<class
 				name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest" />
@@ -13,12 +18,6 @@
 			<class name="com.tekpyramid.chaingrid.login.VerifyTotalPrice" />
 			<class name="com.tekpyramid.chaingrid.login.InvalidAdminLoginTest" />
 			<class name="com.tekpyramid.chaingrid.login.InvalidLoginsTest" />
-		</classes>
-	</test> <!--
-	Test -->
-
-	<test thread-count="2" parallel="tests" name="Test_Runner_2">
-		<classes>
 			<class
 				name="com.tekpyramid.chaingrid.login.VerifyOrdersAreListedTest" />
 			<class
@@ -41,6 +40,5 @@
 		</classes>
 	</test> <!--
 	Test -->
-
 </suite> <!--
 Suite -->
