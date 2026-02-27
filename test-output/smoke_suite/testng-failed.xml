@@ -11,6 +11,28 @@
       </run>
     </groups>
     <classes>
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="searchOrdersByIdTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest -->
+      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="searchByStatusTest"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
       <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
         <methods>
           <include name="beforeClassConfigMethod"/>
@@ -22,17 +44,50 @@
           <include name="verifyRetailerPlaceOrder"/>
         </methods>
       </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
-      <class name="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest">
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest">
         <methods>
-          <include name="loginAsManufacturer"/>
-          <include name="logoutAsManufactrer"/>
+          <include name="logoutAsAdmin"/>
           <include name="beforeSuitConfigMethod"/>
           <include name="beforeClassConfigMethod"/>
           <include name="afterSuiteConfigMethod"/>
-          <include name="verifyAddStock"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyAdminAddsNewProduct"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest -->
+      <class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest">
+        <methods>
+          <include name="verifyAdminLogin"/>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
           <include name="afterClassConfigMethod"/>
         </methods>
-      </class> <!-- com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest -->
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyAdminLoginTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyAdminViewsOrders"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="searchOrderByRetailerTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [smoke_suite] -->

@@ -14,5 +14,6 @@ public class VerifyManufacturerLoginTest extends ManufacturerBaseClass {
 		ManufacturerHomePage mhp = new ManufacturerHomePage(driver);
 		WebElement welcome = mhp.getManWelcomeMsg();
 		Assert.assertTrue(welcome.getText().contains("Welcome manufacturer"));
+		System.out.println("manufacturer is verified");
 	}
 }

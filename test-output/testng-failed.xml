@@ -1,13 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [smoke_suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tekpyramid.chaingrid.generic_listenerimpclass.ListImpClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="DemoTests.DataDrivenTesting_2Test">
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest">
         <methods>
-          <include name="test3"/>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="searchOrdersByIdTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
         </methods>
-      </class> <!-- DemoTests.DataDrivenTesting_2Test -->
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest -->
+      <class name="com.tekpyramid.chaingrid.login.SearchByStatusTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="searchByStatusTest"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.SearchByStatusTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest">
+        <methods>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="logoutAsRetailer"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsRetailer"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyRetailerPlaceOrder"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyAdminAddsNewProduct"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest -->
+      <class name="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest">
+        <methods>
+          <include name="verifyAdminLogin"/>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.login.VerifyAdminLoginTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+          <include name="verifyAdminViewsOrders"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest -->
+      <class name="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest">
+        <methods>
+          <include name="logoutAsAdmin"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="searchOrderByRetailerTest"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="loginAsAdmin"/>
+          <include name="afterClassConfigMethod"/>
+        </methods>
+      </class> <!-- com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [smoke_suite] -->

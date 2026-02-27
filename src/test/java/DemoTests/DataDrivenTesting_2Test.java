@@ -20,6 +20,17 @@ public class DataDrivenTesting_2Test {
 
 //	@Test
 //	public void  maventest() throws IOException, ParseException{
+	
+	/* 1.For for the selected classes
+	 * mvn -Dtest=className1,className2 test -Dbrowser=chrome -Durl=https://www.amazon.com 
+	 * -Dusername=admin -Dpassword=admin123.
+	 * 
+	 * For All the classes
+	 * mvn test -Dbrowser=chrome -Durl=https://www.amazon.com 
+	 * -Dusername=admin -Dpassword=admin123.
+	 * 
+	 * 
+	 */
 //		
 //		String Browser = System.getProperty("browser");
 //		String Url = System.getProperty("url");

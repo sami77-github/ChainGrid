@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-smoke_suite" class="navigator-link">
+              <span class="suite-name border-failed">smoke_suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\samis\AppData\Local\Temp\testng-eclipse--1818394995\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-smoke_suite" class="navigator-link ">
+                    <span>C:\Users\samis\eclipse-workspace\ChainGrid\Suite_Files\smoke_suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-smoke_suite" class="navigator-link ">
+                    <span class="test-stats">12 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-smoke_suite" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-smoke_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-smoke_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-smoke_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-smoke_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,31 +92,85 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">12 methods, 7 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-smoke_suite" class="hide-methods failed suite-smoke_suite"> (hide)</a> <!-- hide-methods failed suite-smoke_suite -->
+                      <a href="#" panel-name="suite-smoke_suite" class="show-methods failed suite-smoke_suite"> (show)</a> <!-- show-methods failed suite-smoke_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-smoke_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.login.SearchByStatusTest" class="method navigator-link" hash-for-method="searchByStatusTest">searchByStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest" class="method navigator-link" hash-for-method="searchOrderByRetailerTest">searchOrderByRetailerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest" class="method navigator-link" hash-for-method="searchOrdersByIdTest">searchOrdersByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest" class="method navigator-link" hash-for-method="verifyAdminAddsNewProduct">verifyAdminAddsNewProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.login.VerifyAdminLoginTest" class="method navigator-link" hash-for-method="verifyAdminLogin">verifyAdminLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest" class="method navigator-link" hash-for-method="verifyAdminViewsOrders">verifyAdminViewsOrders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest" class="method navigator-link" hash-for-method="verifyRetailerPlaceOrder">verifyRetailerPlaceOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-smoke_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-smoke_suite" class="hide-methods passed suite-smoke_suite"> (hide)</a> <!-- hide-methods passed suite-smoke_suite -->
+                      <a href="#" panel-name="suite-smoke_suite" class="show-methods passed suite-smoke_suite"> (show)</a> <!-- show-methods passed suite-smoke_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-smoke_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DemoTests.DataDrivenTesting_2Test" class="method navigator-link" hash-for-method="test3(sami, shaikh)">test3(sami, shaikh)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest" class="method navigator-link" hash-for-method="manufacturerVerifyAssignedProduct">manufacturerVerifyAssignedProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DemoTests.DataDrivenTesting_2Test" class="method navigator-link" hash-for-method="test3(Qspiders, tekpyramid)">test3(Qspiders, tekpyramid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest" class="method navigator-link" hash-for-method="verifyAddStock">verifyAddStock</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DemoTests.DataDrivenTesting_2Test" class="method navigator-link" hash-for-method="test3(samiuddin shaikh, Shaikh)">test3(samiuddin shaikh, Shaikh)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.login.InvalidAdminLoginTest" class="method navigator-link" hash-for-method="verifyInvalidAdminloginTest">verifyInvalidAdminloginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest" class="method navigator-link" hash-for-method="verifyLoginTest">verifyLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke_suite" title="com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest" class="method navigator-link" hash-for-method="verifyManufacturerLogin">verifyManufacturerLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-smoke_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,160 +181,1222 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-smoke_suite" class="panel smoke_suite">
+          <div class="suite-smoke_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">DemoTests.DataDrivenTesting_2Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test3(sami, shaikh)">
-                  </a> <!-- test3(sami, shaikh) -->
-                  <span class="method-name">test3</span>
-                  <span class="parameters">(sami,shaikh)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test3(Qspiders, tekpyramid)">
-                  </a> <!-- test3(Qspiders, tekpyramid) -->
-                  <span class="method-name">test3</span>
-                  <span class="parameters">(Qspiders,tekpyramid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test3(samiuddin shaikh, Shaikh)">
-                  </a> <!-- test3(samiuddin shaikh, Shaikh) -->
-                  <span class="method-name">test3</span>
-                  <span class="parameters">(samiuddin shaikh,Shaikh)</span>
+                  <a name="searchOrdersByIdTest">
+                  </a> <!-- searchOrdersByIdTest -->
+                  <span class="method-name">searchOrdersByIdTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Orders
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1642a40d-a7da-4079-aab9-3d7ea60450f5, findElement {using=link text, value=Orders}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18604, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1642a40d-a7da-4079-aab9-3d7ea60450f5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest.searchOrdersByIdTest(SearchOrdersIdTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.login.SearchByStatusTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByStatusTest">
+                  </a> <!-- searchByStatusTest -->
+                  <span class="method-name">searchByStatusTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Orders
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [299135d7-85c5-4cb5-8b4b-68c906b86d6a, findElement {using=link text, value=Orders}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1268, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 299135d7-85c5-4cb5-8b4b-68c906b86d6a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.tekpyramid.chaingrid.login.SearchByStatusTest.searchByStatusTest(SearchByStatusTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRetailerPlaceOrder">
+                  </a> <!-- verifyRetailerPlaceOrder -->
+                  <span class="method-name">verifyRetailerPlaceOrder</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #cmbFilter
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9e7eb610-e522-45b9-a238-691987055a55, findElement {using=id, value=cmbFilter}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14316, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9e7eb610-e522-45b9-a238-691987055a55
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:41)
+	at com.tekpyramid.chaingrid.object_repository.MyOrderPage.verifyOrderPlaceTest(MyOrderPage.java:71)
+	at com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest.verifyRetailerPlaceOrder(VerifyPlaceOrderTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminAddsNewProduct">
+                  </a> <!-- verifyAdminAddsNewProduct -->
+                  <span class="method-name">verifyAdminAddsNewProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Add Products
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7e668475-08a7-4841-9024-a53b6622b5bb, findElement {using=link text, value=Add Products}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19148, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 7e668475-08a7-4841-9024-a53b6622b5bb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest.verifyAdminAddsNewProduct(VerifyAdminAddProductTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.login.VerifyAdminLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminLogin">
+                  </a> <!-- verifyAdminLogin -->
+                  <span class="method-name">verifyAdminLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h1[text()=&apos;Welcome Admin&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1e37d228-3a8b-4940-94ec-917605857f0e, findElement {using=xpath, value=//h1[text()=&apos;Welcome Admin&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2260, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1e37d228-3a8b-4940-94ec-917605857f0e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at com.tekpyramid.chaingrid.login.VerifyAdminLoginTest.verifyAdminLogin(VerifyAdminLoginTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminViewsOrders">
+                  </a> <!-- verifyAdminViewsOrders -->
+                  <span class="method-name">verifyAdminViewsOrders</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Orders
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [821f2dc8-1f81-4bba-a11a-ba6c7e357066, findElement {using=link text, value=Orders}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12932, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 821f2dc8-1f81-4bba-a11a-ba6c7e357066
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest.verifyAdminViewsOrders(AdminVerifiesOrdersTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByRetailerTest">
+                  </a> <!-- searchOrderByRetailerTest -->
+                  <span class="method-name">searchOrderByRetailerTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Orders
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7def905f-8be8-443e-8d39-e7466facb9a1, findElement {using=link text, value=Orders}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 148.0, moz:accessibilityChecks: false, moz:buildID: 20260216153405, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21464, moz:profile: C:\Users\samis\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 7def905f-8be8-443e-8d39-e7466facb9a1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest.searchOrderByRetailerTest(SearchOrderByRetailerTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-failed -->
+          <div class="suite-smoke_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="manufacturerVerifyAssignedProduct">
+                  </a> <!-- manufacturerVerifyAssignedProduct -->
+                  <span class="method-name">manufacturerVerifyAssignedProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-passed -->
+          <div class="suite-smoke_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyManufacturerLogin">
+                  </a> <!-- verifyManufacturerLogin -->
+                  <span class="method-name">verifyManufacturerLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-passed -->
+          <div class="suite-smoke_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddStock">
+                  </a> <!-- verifyAddStock -->
+                  <span class="method-name">verifyAddStock</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-passed -->
+          <div class="suite-smoke_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.login.InvalidAdminLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidAdminloginTest">
+                  </a> <!-- verifyInvalidAdminloginTest -->
+                  <span class="method-name">verifyInvalidAdminloginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-passed -->
+          <div class="suite-smoke_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginTest">
+                  </a> <!-- verifyLoginTest -->
+                  <span class="method-name">verifyLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke_suite-class-passed -->
+        </div> <!-- panel smoke_suite -->
+        <div panel-name="test-xml-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\samis\AppData\Local\Temp\testng-eclipse--1818394995\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\samis\eclipse-workspace\ChainGrid\Suite_Files\smoke_suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;smoke_suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.tekpyramid.chaingrid.generic_listenerimpclass.ListImpClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;DemoTests.DataDrivenTesting_2Test&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;test3&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- DemoTests.DataDrivenTesting_2Test --&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.SearchByStatusTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.InvalidAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyAdminLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- smoke_suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for smoke_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test (12 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for smoke_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">manufacturerVerifyAssignedProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchByStatusTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchOrderByRetailerTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchOrdersByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddStock</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAdminAddsNewProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAdminLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAdminViewsOrders</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyInvalidAdminloginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyManufacturerLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRetailerPlaceOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for smoke_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_smoke_suite');
+function tableData_smoke_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test3')
-data.setCell(0, 2, 'DemoTests.DataDrivenTesting_2Test')
-data.setCell(0, 3, 8);
+data.setCell(0, 1, 'verifyRetailerPlaceOrder')
+data.setCell(0, 2, 'com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest')
+data.setCell(0, 3, 20721);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test3')
-data.setCell(1, 2, 'DemoTests.DataDrivenTesting_2Test')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'verifyAdminViewsOrders')
+data.setCell(1, 2, 'com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest')
+data.setCell(1, 3, 20039);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3')
-data.setCell(2, 2, 'DemoTests.DataDrivenTesting_2Test')
-data.setCell(2, 3, 1);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'searchByStatusTest')
+data.setCell(2, 2, 'com.tekpyramid.chaingrid.login.SearchByStatusTest')
+data.setCell(2, 3, 20021);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'searchOrderByRetailerTest')
+data.setCell(3, 2, 'com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest')
+data.setCell(3, 3, 20018);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAdminLogin')
+data.setCell(4, 2, 'com.tekpyramid.chaingrid.login.VerifyAdminLoginTest')
+data.setCell(4, 3, 20017);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchOrdersByIdTest')
+data.setCell(5, 2, 'com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest')
+data.setCell(5, 3, 20016);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAdminAddsNewProduct')
+data.setCell(6, 2, 'com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest')
+data.setCell(6, 3, 20016);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyInvalidAdminloginTest')
+data.setCell(7, 2, 'com.tekpyramid.chaingrid.login.InvalidAdminLoginTest')
+data.setCell(7, 3, 10799);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddStock')
+data.setCell(8, 2, 'com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest')
+data.setCell(8, 3, 1201);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'manufacturerVerifyAssignedProduct')
+data.setCell(9, 2, 'com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest')
+data.setCell(9, 3, 1026);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginTest')
+data.setCell(10, 2, 'com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest')
+data.setCell(10, 3, 94);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyManufacturerLogin')
+data.setCell(11, 2, 'com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest')
+data.setCell(11, 3, 45);
+window.suiteTableData['smoke_suite']= { tableData: data, tableDiv: 'times-div-smoke_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-smoke_suite">
+              </div> <!-- times-div-smoke_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for smoke_suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">20 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">DemoTests.DataDrivenTesting_2Test</span>
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">JDBC</span>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
                 <br/>
-                <span class="ignored-method-name">testing</span>
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.login.SearchByStatusTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.login.VerifyAdminLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuitConfigMethod</span>
+                <br/>
+                <span class="ignored-method-name">afterSuiteConfigMethod</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-smoke_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">DemoTests.DataDrivenTesting_2Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test3(sami, shaikh)</span>
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuitConfigMethod</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsManufacturer</span>
+                <span class="method-start">51945 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test3(samiuddin shaikh, Shaikh)</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-name">verifyAddStock</span>
+                <span class="method-start">52976 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutAsManufactrer</span>
+                <span class="method-start">54177 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">54303 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyPlaceOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">55299 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsRetailer</span>
+                <span class="method-start">59922 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test3(Qspiders, tekpyramid)</span>
-                <span class="method-start">14 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRetailerPlaceOrder</span>
+                <span class="method-start">60737 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutAsRetailer</span>
+                <span class="method-start">81524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">81686 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.login.SearchByStatusTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">82409 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">87173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchByStatusTest</span>
+                <span class="method-start">87852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">107904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">127926 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.login.VerifyManufacturerLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">128801 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsManufacturer</span>
+                <span class="method-start">133338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyManufacturerLogin</span>
+                <span class="method-start">134197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutAsManufactrer</span>
+                <span class="method-start">134242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">134419 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.login.InvalidAdminLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidAdminloginTest</span>
+                <span class="method-start">135573 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyManuViewAssighnedProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">146375 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsManufacturer</span>
+                <span class="method-start">150569 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manufacturerVerifyAssignedProduct</span>
+                <span class="method-start">151314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutAsManufactrer</span>
+                <span class="method-start">152340 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">152513 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.AdminVerifiesOrdersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">153477 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">157751 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminViewsOrders</span>
+                <span class="method-start">158235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">178306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">198313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrderByRetailerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">199377 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">204053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrderByRetailerTest</span>
+                <span class="method-start">204819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">224869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">244894 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.VerifyAdminAddProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">245765 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">250655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminAddsNewProduct</span>
+                <span class="method-start">251157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">271204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">291222 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.login.VerifyAdminLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">292421 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">297229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAdminLogin</span>
+                <span class="method-start">297943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">317991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">338013 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.login.VerifyRetailerLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">338907 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsRetailer</span>
+                <span class="method-start">343871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginTest</span>
+                <span class="method-start">344590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutAsRetailer</span>
+                <span class="method-start">344694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">344972 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.SearchOrdersIdTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClassConfigMethod(org.testng.xml.XmlTest@1339d6e1)</span>
+                <span class="method-start">347425 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">351590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrdersByIdTest</span>
+                <span class="method-start">352556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutAsAdmin</span>
+                <span class="method-start">372592 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClassConfigMethod</span>
+                <span class="method-start">392610 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tekpyramid.chaingrid.product_inventory.ManufacturerVerifyAddStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuiteConfigMethod</span>
+                <span class="method-start">393571 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
