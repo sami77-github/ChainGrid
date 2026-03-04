@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoTests.DataDrivenTesting_2Test">
+      <class name="com.tekpyramid.chaingrid.login.RetailerPlacesOrderTest">
         <methods>
-          <include name="test3"/>
+          <include name="retailersOrderTest"/>
+          <include name="beforeSuitConfigMethod"/>
+          <include name="beforeClassConfigMethod"/>
+          <include name="logoutAsRetailer"/>
+          <include name="loginAsRetailer"/>
+          <include name="afterSuiteConfigMethod"/>
+          <include name="afterClassConfigMethod"/>
         </methods>
-      </class> <!-- DemoTests.DataDrivenTesting_2Test -->
+      </class> <!-- com.tekpyramid.chaingrid.login.RetailerPlacesOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
