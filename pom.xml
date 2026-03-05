@@ -57,7 +57,7 @@
   
    <profiles>
  	<profile>
-    	<id>RT</id>
+    	<id>TT</id>
     	<build>
 		<plugins>
 			<plugin>
@@ -67,7 +67,7 @@
 				<configuration>
 					<suiteXmlFiles>
 								<!-- TestNG suite XML files -->
-						<suiteXmlFile>Full_Regression.xml</suiteXmlFile>
+						<suiteXmlFile>Test.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
