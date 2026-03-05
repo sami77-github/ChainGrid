@@ -57,7 +57,7 @@
   
    <profiles>
  	<profile>
-    	<id>NM</id>
+    	<id>TT</id>
     	<build>
 		<plugins>
 			<plugin>
@@ -67,7 +67,7 @@
 				<configuration>
 					<suiteXmlFiles>
 								<!-- TestNG suite XML files -->
-						<suiteXmlFile>Suite_Files/Test.xml</suiteXmlFile>
+						<suiteXmlFile>Test.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
