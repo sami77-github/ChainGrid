@@ -6,6 +6,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.xml.XmlTest;
 
 
 public class DataDrivenTesting_2Test {
@@ -49,5 +50,13 @@ public class DataDrivenTesting_2Test {
 		System.out.println(url);
 		System.out.println(username);
 		System.out.println(password);
+	}
+	
+	@Test
+	public void sampleTest(XmlTest test) {
+		String Browser = test.getParameter("browser");
+		String Url = test.getParameter("url");
+		String Username = test.getParameter("username");
+		String Password = test.getParameter("password");
 	}
 }
