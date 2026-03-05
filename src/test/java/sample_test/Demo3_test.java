@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 public class Demo3_test {
 
-	@Test
+	@Test(priority = 7)
 	public void test_7() {
 		System.out.println("test_7 executed");
 	}
 	
-	@Test
+	@Test(priority = 8)
 	public void test_8() {
 		System.out.println("test_8 executed");
 	}
