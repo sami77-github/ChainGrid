@@ -6,6 +6,16 @@ public class Demo1_test {
 
 	@Test(priority = 1)
 	public void test_1() {
+		String Browser = System.getProperty("browser");
+		String Environment = System.getProperty("environment");
+		String Username = System.getProperty("username");
+		String Password = System.getProperty("password");
+		
+		System.out.println(Browser);
+		System.out.println(Environment);
+		System.out.println(Username);
+		System.out.println(Password);
+		
 		System.out.println("test_1 executed");
 	}
 	
