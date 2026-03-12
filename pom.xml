@@ -74,6 +74,26 @@
 		</plugins>
 		</build>
    	</profile>
+   	
+   	<profile>
+    	<id>ST1</id>
+    	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+								<!-- TestNG suite XML files -->
+						<suiteXmlFile>sampleTest1.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+		</build>
+   	</profile>
+   	
 </profiles>
   
 </project>
