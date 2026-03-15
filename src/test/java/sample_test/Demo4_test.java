@@ -32,7 +32,7 @@ public class Demo4_test {
 			Id = test.getParameter("id");
 		}
 		
-		String ottoman = System.getProperty("Ottoman");
+		String ottoman = System.getProperty("ottoman");
 		if(ottoman==null) {
 			ottoman = test.getParameter("ottoman");	
 		}
