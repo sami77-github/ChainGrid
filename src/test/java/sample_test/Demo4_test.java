@@ -3,10 +3,10 @@ package sample_test;
 import org.testng.annotations.Test;
 import org.testng.xml.XmlTest;
 
-public class Demo1_test {
+public class Demo4_test {
 
-	@Test(priority = 1)
-	public void test_1(XmlTest test) {
+	@Test
+	public void test_9(XmlTest test) {
 		String Browser = System.getProperty("browser");
 		if(Browser==null) {
 			Browser = test.getParameter("browser");
@@ -37,23 +37,11 @@ public class Demo1_test {
 			ottoman = test.getParameter("ottoman");	
 		}
 		
-		System.out.println(Browser);
-		System.out.println(Environment);
-		System.out.println(Username);
-		System.out.println(Password);
-		System.out.println(Id);
-		System.out.println(ottoman);
-		
-		System.out.println("test_1 executed");
-	}
-	
-	@Test(priority = 2)
-	public void test_2() {
-		System.out.println("test_2 executed");
-	}
-	
-	@Test(priority = 3)
-	public void test_3() {
-		System.out.println("test_3 executed");
+		System.out.println(Browser+" from Demo4");
+		System.out.println(Environment+" from Demo4");
+		System.out.println(Username+" from Demo4");
+		System.out.println(Password+" from Demo4");
+		System.out.println(Id+" from Demo4");
+		System.out.println(ottoman+" from Demo4");
 	}
 }
